@@ -11,8 +11,7 @@ Static Website Hosting utilizando Amazon S3
 
 </p>
 
-<p align="center"> <img src="capa-lab.png" width="850"> </p> <p align="center"> <b>Implementação de AWS CLI</b> </p> </p>
-
+![Capa do Laboratório AWS S3](capa-lab.png)
 
 ## Visão Geral
 
