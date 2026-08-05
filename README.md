@@ -107,17 +107,13 @@ upload: ./index.html
 
 ### Configuração de Segurança
 
-Inicialmente, o acesso público foi bloqueado pelo mecanismo:
-
+Inicialmente, o acesso público foi bloqueado pelo mecanismo: 
 Amazon S3 Block Public Access
-
 Ao tentar acessar o arquivo:
-
 Resultado:
 Access Denied
 
 Esse comportamento demonstrou a proteção padrão aplicada pelo Amazon S3.
-
 Foram realizadas as seguintes configurações:
 
 ✔ Revisão do Block Public Access
@@ -134,10 +130,9 @@ Após as configurações:
 ✔ Conteúdo hospedado diretamente no Amazon S3
 
 Aplicação publicada:
-
 Mom & Pop Café
 
-## Troubleshooting Realizado
+### Troubleshooting Realizado
 
 Durante o laboratório foram analisados problemas relacionados a:
 
@@ -148,7 +143,7 @@ Validação do endpoint
 
 A resolução envolveu análise de configurações de segurança e ajustes de permissões seguindo as boas práticas AWS.
 
-## Conhecimentos Desenvolvidos
+### Conhecimentos Desenvolvidos
 
 Este projeto permitiu consolidar conhecimentos em:
 
@@ -161,7 +156,7 @@ Static Website Hosting
 Object Storage
 Troubleshooting AWS
 
-## Sobre a Autora
+### Sobre a Autora
 
 Eliana Diniz
 
