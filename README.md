@@ -1,10 +1,7 @@
 ## AWS-S3-Static-Website-Hosting-Lab
 Static Website Hosting utilizando Amazon S3
 
-<p align="center">
-  <img src="images/capa-lab.png" width="900">
-</p>
-
+<img src="./images/capa-lab.png" width="650">
 <p align="center">
 
 <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws">
