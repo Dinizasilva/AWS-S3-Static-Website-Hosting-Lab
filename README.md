@@ -11,7 +11,7 @@ Static Website Hosting utilizando Amazon S3
 
 </p>
 
-![Capa do Laboratório AWS S3](capa-lab.png)
+<p align="center"><img src="capa-lab.png" width="650"></p>
 
 ## Visão Geral
 
