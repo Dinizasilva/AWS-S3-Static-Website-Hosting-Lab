@@ -13,6 +13,7 @@ Static Website Hosting utilizando Amazon S3
 
 <p align="center"> <img src="capa-lab.png" width="850"> </p> <p align="center"> <b>Implementação de AWS CLI</b> </p> </p>
 
+
 ## Visão Geral
 
 Este projeto apresenta a implementação prática de uma solução de Static Website Hosting utilizando Amazon S3, demonstrando o processo completo desde a criação do bucket até a disponibilização pública de uma aplicação web estática.
@@ -27,6 +28,7 @@ Bucket Policy
 Segurança AWS
 Publicação de conteúdo estático
 Gerenciamento via linha de comando
+
 
 ### Arquitetura da Solução
 
@@ -53,6 +55,7 @@ O usuário realiza uma requisição HTTPS para o endpoint público do Amazon S3.
 
 O serviço S3 processa a solicitação e entrega o conteúdo estático armazenado no bucket.
 
+
 ### Objetivos do Projeto
 
 Criar e configurar um bucket Amazon S3
@@ -64,6 +67,7 @@ Habilitar hospedagem de website estático
 Validar publicação através de navegador
 Aplicar conceitos de segurança AWS
 
+
 ## Serviços AWS Utilizados
 
 Amazon S3	Armazenamento e hospedagem do website
@@ -71,6 +75,7 @@ AWS CLI	Gerenciamento via terminal
 IAM	Controle de identidade e acesso
 EC2 Instance Connect	Ambiente Linux para execução dos comandos
 
+ 
  ### Implementação
  
  1.Configuração da AWS CLI
@@ -86,11 +91,13 @@ AWS Secret Access Key
 Region: us-west-2
 Output Format: json
 
+
 2.Criação do Bucket S3
 aws s3 mb s3://eliana-diniz-lab-s3-20260805
 
 Resultado:
 make_bucket: eliana-diniz-lab-s3-20260805
+
 
 3.Upload do Website
 
@@ -122,6 +129,7 @@ Criação de Bucket Policy
 Permissão de leitura pública controlada
 Validação do acesso externo
 
+
 ## Resultado Final
 
 Após as configurações:
@@ -132,6 +140,7 @@ Conteúdo hospedado diretamente no Amazon S3
 
 Aplicação publicada:
 Mom & Pop Café
+
 
 ### Troubleshooting Realizado
 
@@ -156,6 +165,7 @@ Segurança em Nuvem
 Static Website Hosting
 Object Storage
 Troubleshooting AWS
+
 
 ### Sobre a Autora
 
