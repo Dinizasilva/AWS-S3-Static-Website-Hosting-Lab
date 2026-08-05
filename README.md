@@ -28,7 +28,7 @@ Segurança AWS
 Publicação de conteúdo estático
 Gerenciamento via linha de comando
 
-## Arquitetura da Solução
+### Arquitetura da Solução
 
 ![Arquitetura da Solução AWS S3](arquitetura.png.png)
 
@@ -53,7 +53,7 @@ O usuário realiza uma requisição HTTPS para o endpoint público do Amazon S3.
 
 O serviço S3 processa a solicitação e entrega o conteúdo estático armazenado no bucket.
 
-## Objetivos do Projeto
+### Objetivos do Projeto
 
 Criar e configurar um bucket Amazon S3
 Utilizar AWS CLI para gerenciamento de recursos
@@ -71,7 +71,7 @@ AWS CLI	Gerenciamento via terminal
 IAM	Controle de identidade e acesso
 EC2 Instance Connect	Ambiente Linux para execução dos comandos
 
- ## Implementação
+ ### Implementação
  
 1. Configuração da AWS CLI
 
@@ -105,7 +105,7 @@ aws s3 cp index.html s3://eliana-diniz-lab-s3-20260805
 Resultado:
 upload: ./index.html
 
-## Configuração de Segurança
+### Configuração de Segurança
 
 Inicialmente, o acesso público foi bloqueado pelo mecanismo:
 
