@@ -11,7 +11,7 @@ Static Website Hosting utilizando Amazon S3
 
 </p>
 
-<p align="center"><img src="capa-lab.png" width="650"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Dinizasilva/AWS-S3-Static-Website-Hosting-Lab/main/capa-lab.png" width="650"></p>
 
 ## Visão Geral
 
