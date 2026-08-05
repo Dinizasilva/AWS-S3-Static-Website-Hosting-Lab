@@ -2,6 +2,10 @@
 Static Website Hosting utilizando Amazon S3
 
 <p align="center">
+  <img src="images/capa-lab.png" width="900">
+</p>
+
+<p align="center">
 
 <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws">
 <img src="https://img.shields.io/badge/Amazon%20S3-Object%20Storage-green?style=for-the-badge&logo=amazons3">
@@ -10,8 +14,6 @@ Static Website Hosting utilizando Amazon S3
 <img src="https://img.shields.io/badge/Bucket%20Policy-Security-red?style=for-the-badge&logo=amazonaws">
 
 </p>
-
-<p align="center"><img src="https://raw.githubusercontent.com/Dinizasilva/AWS-S3-Static-Website-Hosting-Lab/main/capa-lab.png" width="650"></p>
 
 ## Visão Geral
 
