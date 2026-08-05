@@ -73,7 +73,7 @@ EC2 Instance Connect	Ambiente Linux para execução dos comandos
 
  ### Implementação
  
-1. Configuração da AWS CLI
+ 1.Configuração da AWS CLI
 
 Inicialização das credenciais temporárias:
 
@@ -86,13 +86,13 @@ AWS Secret Access Key
 Region: us-west-2
 Output Format: json
 
-2. Criação do Bucket S3
+2.Criação do Bucket S3
 aws s3 mb s3://eliana-diniz-lab-s3-20260805
 
 Resultado:
 make_bucket: eliana-diniz-lab-s3-20260805
 
-3. Upload do Website
+3.Upload do Website
 
 Arquivo utilizado:
 
@@ -105,6 +105,7 @@ aws s3 cp index.html s3://eliana-diniz-lab-s3-20260805
 Resultado:
 upload: ./index.html
 
+
 ### Configuração de Segurança
 
 Inicialmente, o acesso público foi bloqueado pelo mecanismo: 
@@ -116,18 +117,18 @@ Access Denied
 Esse comportamento demonstrou a proteção padrão aplicada pelo Amazon S3.
 Foram realizadas as seguintes configurações:
 
-✔ Revisão do Block Public Access
-✔ Criação de Bucket Policy
-✔ Permissão de leitura pública controlada
-✔ Validação do acesso externo
+Revisão do Block Public Access
+Criação de Bucket Policy
+Permissão de leitura pública controlada
+Validação do acesso externo
 
 ## Resultado Final
 
 Após as configurações:
 
-✔ Website publicado com sucesso
-✔ Arquivo HTML acessível via navegador
-✔ Conteúdo hospedado diretamente no Amazon S3
+Website publicado com sucesso
+Arquivo HTML acessível via navegador
+Conteúdo hospedado diretamente no Amazon S3
 
 Aplicação publicada:
 Mom & Pop Café
