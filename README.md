@@ -11,10 +11,7 @@ Static Website Hosting utilizando Amazon S3
 
 </p>
 
-![Capa do Laboratório AWS S3](capa-lab.png)
-
-AWS S3 Static Website Hosting Lab
-<p align="center"> <img src="./images/capa-lab.png" width="850"> </p> <p align="center"> <b>Implementação de hospedagem de website estático utilizando Amazon S3 e AWS CLI</b> </p>
+<p align="center"> <img src="capa-lab.png" width="850"> </p> <p align="center"> <b>Implementação de AWS CLI</b> </p> </p>
 
 ## Visão Geral
 
@@ -33,7 +30,7 @@ Gerenciamento via linha de comando
 
 ## Arquitetura da Solução
 
-![Arquitetura da Solução AWS S3](arquitetura.png)
+![Arquitetura da Solução AWS S3](arquitetura.png.png)
 
 Fluxo da arquitetura:
 
