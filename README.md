@@ -1,5 +1,4 @@
 ## AWS-S3-Static-Website-Hosting-Lab
-
 <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws">
 <img src="https://img.shields.io/badge/Amazon%20S3-Object%20Storage-green?style=for-the-badge&logo=amazons3">
 <img src="https://img.shields.io/badge/AWS%20CLI-Command%20Line-blue?style=for-the-badge&logo=amazonaws">
@@ -7,6 +6,7 @@
 <img src="https://img.shields.io/badge/Bucket%20Policy-Security-red?style=for-the-badge&logo=amazonaws">
 
 </p>
+
 
 <p align="center">
   <img src="capa-lab.png" alt="AWS S3 Static Website Hosting Lab" width="650">
