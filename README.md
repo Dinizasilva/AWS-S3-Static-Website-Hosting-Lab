@@ -1,11 +1,18 @@
 ## AWS-S3-Static-Website-Hosting-Lab
-<img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws">
-<img src="https://img.shields.io/badge/Amazon%20S3-Object%20Storage-green?style=for-the-badge&logo=amazons3">
-<img src="https://img.shields.io/badge/AWS%20CLI-Command%20Line-blue?style=for-the-badge&logo=amazonaws">
-<img src="https://img.shields.io/badge/IAM-Permissions-yellow?style=for-the-badge&logo=amazoniam">
-<img src="https://img.shields.io/badge/Bucket%20Policy-Security-red?style=for-the-badge&logo=amazonaws">
-</p>
 
+<p align="center">
+
+  <img src="https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws">
+
+  <img src="https://img.shields.io/badge/Amazon-S3-red?logo=amazons3">
+
+  <img src="https://img.shields.io/badge/AWS_CLI-Terminal-232F3E?logo=amazonaws">
+
+  <img src="https://img.shields.io/badge/Linux-Ubuntu-E95420?logo=ubuntu">
+
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5">
+
+</p>
 
 <p align="center">
   <img src="capa-lab.png" alt="AWS S3 Static Website Hosting Lab" width="650">
