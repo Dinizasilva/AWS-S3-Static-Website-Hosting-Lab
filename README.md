@@ -14,6 +14,7 @@
 
 </p>
 
+
 <p align="center">
   <img src="capa-lab.png" alt="AWS S3 Static Website Hosting Lab" width="650">
 </p>
