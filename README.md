@@ -4,7 +4,6 @@
 <img src="https://img.shields.io/badge/AWS%20CLI-Command%20Line-blue?style=for-the-badge&logo=amazonaws">
 <img src="https://img.shields.io/badge/IAM-Permissions-yellow?style=for-the-badge&logo=amazoniam">
 <img src="https://img.shields.io/badge/Bucket%20Policy-Security-red?style=for-the-badge&logo=amazonaws">
-
 </p>
 
 
