@@ -2,7 +2,7 @@
   
 Tentei criar um bucket pro meu site estático. O nome já existia. Depois habilitei Static Website Hosting e não achava a opção. Depois as permissões IAM pareciam não se encontrar. Os links quebravam. Refiz tudo do zero. Aí funcionou.
 
-  
+   
 <p align="center">
 
   <img src="https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws">
