@@ -136,7 +136,7 @@ O index.html tinha referências assim:
 
 
 ```html
-<a href="./about.html">Sobre</a>
+'<a href="./about.html">Sobre</a>'
 <img src="./images/logo.png">
 
 
