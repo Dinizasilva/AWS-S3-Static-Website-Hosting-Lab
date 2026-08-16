@@ -134,8 +134,11 @@ Depois que as permissões finalmente funcionaram (o ambiente do lab foi ajustado
 
 O index.html tinha referências assim:
 
+
+```html
 <a href="./about.html">Sobre</a>
 <img src="./images/logo.png">
+
 
 No meu computador, ./about.html funciona porque o arquivo está na mesma pasta. No S3 Static Website, o caminho relativo precisa ser exatamente o que está no bucket. Se o arquivo está na raiz, about.html funciona. Se está em images/logo.png, images/logo.png funciona. Mas ./images/logo.png às vezes quebra dependendo de como o navegador resolve o path relativo no endpoint do S3.
 
