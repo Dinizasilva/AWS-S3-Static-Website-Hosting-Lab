@@ -130,46 +130,55 @@ Não era erro meu. Era restrição do ambiente de lab. Mas eu não sabia disso. 
 
 ### Etapa 5: Links quebrados e caminhos relativos
 
-Depois que as permissões finalmente funcionaram (o ambiente do lab foi ajustado ou eu encontrei a combinação certa), o site abriu. Mas os links dentro do HTML estavam quebrados.
+Depois que as permissões finalmente funcionaram, o site abriu. Mas os links dentro do HTML estavam quebrados.
 
-O index.html tinha referências assim:
+O `index.html` tinha referências assim:
 
+    <!-- ANTES — caminhos relativos que quebravam no S3 -->
+    <a href="./about.html">Sobre</a>
+    <img src="./images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
 
-```html
-'<a href="./about.html">Sobre</a>'
-<img src="./images/logo.png">
+No meu computador, `./about.html` funciona porque o arquivo está na mesma pasta. No S3 Static Website, o caminho relativo precisa ser **exatamente** o que está no bucket.
 
+**O problema:** O navegador resolve `./` de forma diferente no endpoint `s3-website` do que no filesystem local. O resultado: **404 no console do navegador**.
 
-No meu computador, ./about.html funciona porque o arquivo está na mesma pasta. No S3 Static Website, o caminho relativo precisa ser exatamente o que está no bucket. Se o arquivo está na raiz, about.html funciona. Se está em images/logo.png, images/logo.png funciona. Mas ./images/logo.png às vezes quebra dependendo de como o navegador resolve o path relativo no endpoint do S3.
+### A correção
 
-### O que fiz: Refiz o HTML. Troquei todos os caminhos relativos (./) por caminhos absolutos do bucket ou simplesmente removi o ./ onde não precisava.
+Refiz o HTML. Troquei todos os caminhos relativos (`./`) por caminhos simples:
 
+    <!-- DEPOIS — caminhos que funcionam no S3 -->
+    <a href="about.html">Sobre</a>
+    <img src="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
 
-<!-- Antes -->
-<a href="./about.html">Sobre</a>
+Ou, para garantir, usei caminhos absolutos baseados no endpoint:
 
-<!-- Depois -->
-<a href="about.html">Sobre</a>
+    <!-- Alternativa: caminho absoluto -->
+    <a href="http://eliana-diniz-lab-s3-20260805.s3-website-us-west-2.amazonaws.com/about.html">Sobre</a>
+    <img src="http://eliana-diniz-lab-s3-20260805.s3-website-us-west-2.amazonaws.com/images/logo.png">
 
+**Regra que eu aprendi:** No S3 Static Website, evite `./`. Use o nome do arquivo direto (`about.html`) ou o caminho completo do bucket (`pasta/arquivo.html`).
+
+---
 
 ### Etapa 6: Refazer do zero
 
 Nesse ponto eu já tinha:
+- Bucket com nome que finalmente funcionou
+- Policy que demorou pra entender
+- HTML com links quebrados
+- Frustração acumulada
 
+Decidi: **vou deletar tudo e refazer do zero.**
 
-*Bucket com nome errado (não, o nome estava certo, mas eu tinha testado vários)
-*Policy que não funcionava por causa de restrição do lab
-*HTML com links quebrados
-*Frustração acumulada
+Deletei o bucket. Criei de novo. Subi o HTML corrigido. Configurei o Static Website Hosting. Apliquei a Bucket Policy. Testei os links.
 
+**Funcionou de primeira.**
 
-Decidi: vou deletar tudo e refazer do zero.
-Deletei o bucket. Criei de novo com o mesmo nome. Subi o HTML corrigido. Configurei o Static Website Hosting. Apliquei a Bucket Policy. Testei os links.
-Funcionou de primeira.
+Por quê? Porque na segunda vez eu já sabia onde cada opção estava. Eu já sabia que o Block Public Access precisava estar desativado. Eu já sabia que a Bucket Policy precisava permitir `s3:GetObject`. Eu já sabia que os links não podiam ter `./`.
 
-Por quê? Porque na segunda vez eu já sabia onde cada opção estava. Eu já sabia que o Block Public Access precisava estar desativado. Eu já sabia que a Bucket Policy precisava permitir s3:GetObject. Eu já sabia que o endpoint era o s3-website, não o s3.amazonaws.com.
-
-Refazer é onde o aprendizado acontece.
+**Refazer é onde o aprendizado acontece.**
 
 
 ### Evidências
